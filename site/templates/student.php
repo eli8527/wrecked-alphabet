@@ -1,13 +1,13 @@
 <?php snippet('header'); ?>
   <div class="layout-wrapper--contained">
-    <div class="student__title" style="--color: <?php printf( "#%06X\n", mt_rand( 0, 0xFFFFFF )); ?>;">
-      <a href="<?= $site->url(); ?>">&#8668;&nbsp;<?= $page->title() ?></a>
+    <div class="student__title">
+      <a href="<?= $site->url(); ?>">&larr;&nbsp;<?= $page->title() ?></a>
     </div>
     <div class="text">
       <?= $page->main_content()->kt(); ?>
     </div>
   </div>
-  <div class="layout-wrapper">
+  <div class="layout-wrapper student__work__container">
     <ul class="student__work">
       <?php foreach($page->main_works()->toStructure() as $block): ?>
         <li class="student__work__item">

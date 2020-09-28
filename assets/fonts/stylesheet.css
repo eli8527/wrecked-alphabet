@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'sig';
+    src: url('Signifier-Regular.woff2') format('woff2'),
+        url('Signifier-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sig';
+    src: url('Signifier-RegularItalic.woff2') format('woff2'),
+        url('Signifier-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'sig';
+    src: url('Signifier-BoldItalic.woff2') format('woff2'),
+        url('Signifier-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'sig';
+    src: url('Signifier-Bold.woff2') format('woff2'),
+        url('Signifier-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

@@ -6,7 +6,7 @@
     <ul class="student__list">
       <?php $studentList = $site->index()->filterBy('intendedTemplate', 'student')->listed(); ?>
       <?php foreach($studentList as $student): ?>
-        <li class="student__list__item" style="--hover-color: <?php printf( "#%06X\n", mt_rand( 0, 0xFFFFFF )); ?>;">
+        <li class="student__list__item">
           <a href="<?= $student->url(); ?>">
             <?= $student->title(); ?>
           </a>
