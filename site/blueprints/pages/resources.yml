@@ -1,0 +1,23 @@
+title: Resources
+icon: template
+preset: page
+
+fields:
+  main_content:
+    label: Main Content
+    type: textarea
+    size: medium
+  # resources:
+  #   type: structure
+  #   label: Resources
+  #   fields:
+  #     title:
+  #       type: textarea
+  #       size: small
+  #     cover_image:
+  #       label: Cover Image
+  #       type: files
+  #       max: 1
+  #     url:
+  #       label: URL
+  #       type: text

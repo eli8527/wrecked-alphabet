@@ -13,22 +13,22 @@ tabs:
           # Using the `create` option, we limit the type of page that can be created when a new page is created
           # Note that the `sandbox` page and the `error` page that also exist in the content folder but use different blueprints thus do not show up in the list
           # Since the error page's blueprint is set to `read: false`, it wouldn't show up here even if you added the error blueprint to the templates list
-          students:
-            headline: Students
+          pages:
+            headline: Pages
             type: pages
             limit: 30
             templates:
-              - student
+              - default
+              - resources
+              - exhibition
       main_2:
         width: 1/2
         sections:
-          main_info:
-            type: fields
-            fields:
-              about:
-                label: About
-                type: textarea
-                size: medium
+          home:
+            headline: Home
+            type: pages
+            templates:
+              - home
           other:
             headline: Error
             type: pages

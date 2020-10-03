@@ -1,0 +1,17 @@
+title: Exhibition
+icon: template
+preset: page
+
+fields:
+  main_content:
+    label: Main Content
+    type: textarea
+    size: medium
+  installation_shots:
+    type: files
+    label: Installation Shots
+    layout: cards
+  main_content_continued:
+    label: Main Content Continued
+    type: textarea
+    size: medium

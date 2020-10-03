@@ -1,12 +1,12 @@
 :root {
-  --font-size: 1.8rem;
-  --font-size--mobile: 1.6rem;
-  --line-height: 1.3;
+  --font-size: 2.4rem;
+  --font-size--mobile: 1.8rem;
+  --line-height: 1.4;
 
   --margin: 2.5rem;
   --margin--mobile: 1.25rem;
 
-  --font-family: 'sig', serif;
+  --font-family: 'Times New Roman', serif;
 }
 
 /* RESET/GLOBAL */
@@ -27,8 +27,8 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height);
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   margin: var(--margin);
 }
 
@@ -52,7 +52,6 @@ a {
 
 /* KirbyText */
 .text {
-  text-align: justify;
 }
 
 .text p,
@@ -88,6 +87,71 @@ a {
   border: none;
 }
 
+.text sup {
+  font-size: 0.6em;
+}
+
+/* Typography */
+.font-0 {
+  font-family: var(--font-family);
+}
+
+.font-1 {
+  font-family: 'monti', serif;
+}
+
+.font-2 {
+  font-family: 'palermo', serif;
+}
+
+.font-3 {
+  font-family: 'neeta', serif;
+  text-transform: lowercase;
+}
+
+.font-4, .text h1 {
+  font-family: 'gerry', serif;
+}
+
+.font-5 {
+  font-family: 'mutt', serif;
+}
+
+.font-6 {
+  font-family: 'princeton', serif;
+}
+
+.font-7 {
+  font-family: 'utopian', serif;
+  text-transform: uppercase;
+}
+
+.font-8 {
+  font-family: 'trees', serif;
+}
+
+.font__preload {
+  position: fixed;
+  top: -100vh;
+  left: -100vh;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Nav */
+nav {
+  position: fixed;
+  top: var(--margin);
+  left: var(--margin);
+}
+
+.navigation__item a, .navigation__item--home a {
+  text-decoration: none;
+}
+
+.navigation__item.active {
+  text-decoration: underline;
+}
 
 /* Layout */
 .layout-wrapper {
@@ -101,88 +165,40 @@ a {
   max-width: 700px;
 }
 
-/* Home */
-.student__list {
-  margin-top: 2em;
+/* Exhibition */
+.exhibition__gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-top: calc(-1 * var(--margin) + 1em);
+  margin-left: calc(-1 * var(--margin));
 }
 
-.student__list__item {
-  font-weight: bold;
+.exhibition__gallery__item {
+  width: 200px;
+  margin-top: var(--margin);
+  margin-left: var(--margin);
 }
 
-.student__list__item a {
+.exhibition__gallery__item a {
   text-decoration: none;
 }
 
-
-/* Student Page */
-.student__title {
-  font-weight: bold;
-  margin-bottom: 1em;
+.exhibition__gallery__item__caption {
+  margin-top: .5em;
+  font-size: .8em;
 }
 
-.student__title a {
-  text-decoration: none;
-}
-
-.student__work {
-  margin-top: calc(2 * var(--margin));
-  margin-left: auto;
-  margin-right: auto;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.student__work__item {
-  margin-bottom: 2em;
-  padding: calc(2 * var(--margin));
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.student__work__item__upload {
-  height: 70vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.student__work__item__upload a {
-  width: 100%;
-  height: 100%;
-}
-
-.student__work__item__upload img, .student__work__item__upload video {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  margin: auto;
-}
-
-.student__work__item__upload audio {
-  width: 100%;
-  max-width: 700px;
-}
-
-.student__work__item__text:not(:only-child) {
-  margin-top: 0.5em;
-}
-
-.student__work__item__text {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px;
-}
-
-@media screen and (max-width: 700px) {
-  .student__work__item {
-    padding: initial;
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: var(--font-size--mobile);
+  }
+  nav {
+    position: initial;
   }
 
-  .student__work__container {
-    margin: initial;
+  .exhibition__gallery__item {
+    width: calc(50% - var(--margin));
   }
 }

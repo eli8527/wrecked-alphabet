@@ -1,32 +1,63 @@
 @font-face {
-    font-family: 'sig';
-    src: url('Signifier-Regular.woff2') format('woff2'),
-        url('Signifier-Regular.woff') format('woff');
+  font-family: 'trees';
+  src: url('NewYorkCityTrees.otf') format("opentype"), url('NewYorkCityTreesRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'monti';
+    src: url('MontiSans-Regular.woff2') format('woff2'),
+        url('MontiSans-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'neeta';
+    src: url('neetainit-Regular.woff2') format('woff2'),
+        url('neetainit-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'sig';
-    src: url('Signifier-RegularItalic.woff2') format('woff2'),
-        url('Signifier-RegularItalic.woff') format('woff');
+    font-family: 'gerry';
+    src: url('GerryRegular.woff2') format('woff2'),
+        url('GerryRegular.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'sig';
-    src: url('Signifier-BoldItalic.woff2') format('woff2'),
-        url('Signifier-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
+    font-family: 'mutt';
+    src: url('TheRichardMuttCase-45degreefr.woff2') format('woff2'),
+        url('TheRichardMuttCase-45degreefr.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'sig';
-    src: url('Signifier-Bold.woff2') format('woff2'),
-        url('Signifier-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'princeton';
+    src: url('PRINCETONCLEAN-Regular.woff2') format('woff2'),
+        url('PRINCETONCLEAN-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'utopian';
+    src: url('Utopian-Regular.woff2') format('woff2'),
+        url('Utopian-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'palermo';
+    src: url('Palermo-Regular.woff2') format('woff2'),
+        url('Palermo-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
