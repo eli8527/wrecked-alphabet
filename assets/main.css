@@ -91,6 +91,10 @@ a {
   font-size: 0.6em;
 }
 
+.text blockquote {
+  margin-left: 3em;
+}
+
 /* Typography */
 .font-0 {
   font-family: var(--font-family);
