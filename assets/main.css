@@ -180,7 +180,7 @@ nav {
 }
 
 .exhibition__gallery__item {
-  width: 200px;
+  width: calc((100vw - (var(--margin) * 5)) / 4);
   margin-top: var(--margin);
   margin-left: var(--margin);
 }
