@@ -10,7 +10,7 @@
       <li class="exhibition__gallery__item">
         <a href="<?= $file->resize(2000)->url() ?>">
           <div class="exhibition__gallery__item__image">
-            <img src="<?= $file->resize(500)->url() ?>" loading="lazy">
+            <img src="<?= $file->resize(1000)->url() ?>" loading="lazy">
           </div>
           <div class="exhibition__gallery__item__caption text text-transform">
             <?= $file->caption()->kt(); ?>
